@@ -13,18 +13,42 @@ body {
 
 div {
     border-radius: 10px;
-    border: 5px solid blanchedalmond;
+    border: 5px solid #A5B68D;
     background-color: cadetblue;
     margin: 10px;
 }
 
-h1 {
+a {
     text-align: center;
     color: aqua;
     padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.para {
+    /* filter: blur(1px); */
+    background-image: linear-gradient(to right, #257180, #FD8B51);
+    border: none;
 }
 
 p {
     padding: 10px;
     font-weight: 700;
+    color: #fff;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #15B392, #D2FF72);
+    color: #243642;
+    border-radius: 50px;
+    position: relative;
+    border: none;
+}
+
+.button a {
+    color: #347928;
 }
