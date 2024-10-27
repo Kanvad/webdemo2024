@@ -46,12 +46,24 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: #CBD2A4;
+    background: #243642;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    border: 10px solid #257180;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+    color: #fff;
+}
+
+.clock2::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right bottom, #133E87, #CC2B52);
+    margin: -10px;
+    border-radius: inherit;
+    z-index: -1;
 }
 
 .number {
@@ -85,7 +97,7 @@ body {
 }
 
 .hour-hand {
-    background-color: #243642;
+    background-color: #606568;
     width: 8px;
     height: 70px;
 }
